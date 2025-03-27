@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谷歌股票量子图表分析</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="dashboard-title">赛博谷歌股票量子分析系统</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">首页</a></li>
+                    <li><a href="report.html" class="nav-link">分析报告</a></li>
+                    <li><a href="recommendations.html" class="nav-link">交易建议</a></li>
+                    <li><a href="charts.html" class="nav-link">图表分析</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="dashboard-title">谷歌股票量子图表分析</h1>
+        
+        <div class="date-display">
+            <span id="currentDate"></span>
+        </div>
+        
+        <section class="price-container">
+            <h2 class="price-header">图表分析概览</h2>
+            <p class="mb-6">本页面展示谷歌股票的各类量子分析图表，包括价格趋势、技术指标、基本面和市场情绪等方面的可视化分析。</p>
+            
+            <div class="price-grid">
+                <a href="#price" class="price-item" style="text-decoration: none;">
+                    <h3 class="price-label">价格趋势图表</h3>
+                    <p>查看谷歌股票的历史价格走势、支撑阻力位和波动率分析</p>
+                </a>
+                <a href="#technical" class="price-item" style="text-decoration: none;">
+                    <h3 class="price-label">技术指标图表</h3>
+                    <p>查看RSI、MACD、布林带等技术指标分析</p>
+                </a>
+                <a href="#fundamental" class="price-item" style="text-decoration: none;">
+                    <h3 class="price-label">基本面图表</h3>
+                    <p>查看收入构成、增长趋势和估值指标等基本面分析</p>
+                </a>
+                <a href="#sentiment" class="price-item" style="text-decoration: none;">
+                    <h3 class="price-label">市场情绪图表</h3>
+                    <p>查看分析师评级、目标价格和市场情绪评分等分析</p>
+                </a>
+            </div>
+        </section>
+        
+        <section id="price" class="chart-container">
+            <h2 class="price-header">价格趋势图表</h2>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌股票一年价格走势</h3>
+                <div class="chart-wrapper">
+                    <img src="images/google_1y_price_chart.png" alt="谷歌股票一年价格走势" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表展示了谷歌股票过去一年的价格走势，包括日K线、交易量和主要移动平均线。
+                    从图表可以看出，谷歌股票在过去一年中整体呈现下降趋势，当前价格为$170.56。</p>
+                </div>
+            </div>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌股票交易量</h3>
+                <div class="chart-wrapper">
+                    <img src="images/google_1y_volume_chart.png" alt="谷歌股票交易量" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表展示了谷歌股票过去一年的交易量变化。交易量是衡量市场活跃度和价格变动可信度的重要指标。
+                    从图表可以看出，在重要价格变动点，交易量通常会出现明显增加。</p>
+                </div>
+            </div>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌股票支撑位和阻力位</h3>
+                <div class="chart-wrapper">
+                    <img src="images/google_support_resistance.png" alt="谷歌股票支撑位和阻力位" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表标识了谷歌股票的主要支撑位和阻力位。当前价格$170.56位于支撑位$176.73和阻力位$197.35之间。
+                    这些关键价格水平是交易决策的重要参考点。</p>
+                </div>
+            </div>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌股票趋势和波动率</h3>
+                <div class="chart-wrapper">
+                    <img src="images/google_trend_volatility.png" alt="谷歌股票趋势和波动率" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表展示了谷歌股票的趋势强度和波动率变化。谷歌股票的20日波动率为2.36%，属于中等波动水平。
+                    趋势强度为85.33，属于非常强趋势，趋势方向为下降。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="technical" class="chart-container">
+            <h2 class="price-header">技术指标图表</h2>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌股票技术分析综合图</h3>
+                <div class="chart-wrapper">
+                    <img src="images/google_technical_analysis.png" alt="谷歌股票技术分析" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表综合展示了谷歌股票的多项技术指标，包括价格走势、移动平均线、RSI和MACD等。
+                    从图表可以看出，当前价格位于20日均线上方，但低于50日和200日均线，表明短期趋势相对强于中长期趋势。</p>
+                </div>
+            </div>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌股票技术信号</h3>
+                <div class="chart-wrapper">
+                    <img src="images/technical_signals.png" alt="谷歌股票技术信号" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表展示了谷歌股票的主要技术信号。当前RSI(14)值为46.85，处于中性偏弱状态。
+                    MACD信号为"看涨"，MACD柱状图为正且增长，表明上升动能增强。</p>
+                </div>
+            </div>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌股票技术面评分</h3>
+                <div class="chart-wrapper">
+                    <img src="images/technical_score.png" alt="谷歌股票技术面评分" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表展示了谷歌股票的技术面综合评分。基于多项技术指标的量子算法综合分析，
+                    谷歌股票的技术面评分为38.0分（满分100分），评级为"看跌"。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="fundamental" class="chart-container">
+            <h2 class="price-header">基本面图表</h2>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌收入构成</h3>
+                <div class="chart-wrapper">
+                    <img src="images/revenue_breakdown_pie.png" alt="谷歌收入构成" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表展示了谷歌各业务线的收入占比。谷歌搜索业务仍是主要收入来源，占总收入的56.6%，
+                    其次是谷歌云业务（12.4%）和YouTube广告（10.3%）。</p>
+                </div>
+            </div>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌收入增长趋势</h3>
+                <div class="chart-wrapper">
+                    <img src="images/revenue_growth_trend.png" alt="谷歌收入增长趋势" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表展示了谷歌近年来的收入增长趋势。2024财年谷歌总收入达到3500.18亿美元，同比增长13.87%。
+                    值得注意的是，谷歌云业务在2024年增长了30%，显示出强劲的发展势头。</p>
+                </div>
+            </div>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌估值指标</h3>
+                <div class="chart-wrapper">
+                    <img src="images/valuation_metrics.png" alt="谷歌估值指标" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表展示了谷歌的主要估值指标。谷歌股票的市盈率(P/E)为25.3倍，预期市盈率为22.1倍，
+                    市盈增长比(PEG)为1.5倍。相比历史平均水平和行业平均水平，谷歌的估值处于合理偏高的水平。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="sentiment" class="chart-container">
+            <h2 class="price-header">市场情绪图表</h2>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌分析师评级分布</h3>
+                <div class="chart-wrapper">
+                    <img src="images/analyst_ratings_distribution.png" alt="谷歌分析师评级分布" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表展示了华尔街分析师对谷歌股票的评级分布。根据36位分析师的评级，
+                    谷歌股票获得"Moderate Buy"的综合评级：26位分析师给予买入评级，10位分析师给予持有评级，0位分析师给予卖出评级。</p>
+                </div>
+            </div>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌目标价格对比</h3>
+                <div class="chart-wrapper">
+                    <img src="images/price_targets_comparison.png" alt="谷歌目标价格对比" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表对比了谷歌的当前价格与分析师给出的目标价格。分析师给出的平均目标价为$215.03，
+                    比当前价格高出26.07%。最高目标价为$235.00，最低目标价为$184.00。</p>
+                </div>
+            </div>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌市场情绪评分</h3>
+                <div class="chart-wrapper">
+                    <img src="images/market_sentiment_score.png" alt="谷歌市场情绪评分" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表展示了谷歌股票的市场情绪综合评分。基于分析师评级、机构持股、社交媒体情绪等因素的量子算法综合分析，
+                    谷歌股票的市场情绪评分为69.5分（满分100分），评级为"看好"。</p>
+                </div>
+            </div>
+            
+            <div class="price-item">
+                <h3 class="price-label">谷歌股票综合评分</h3>
+                <div class="chart-wrapper">
+                    <img src="images/overall_score.png" alt="谷歌股票综合评分" class="chart-image">
+                </div>
+                <div class="calculation-info">
+                    <p>该图表展示了谷歌股票的综合评分。综合考虑技术面、基本面和市场情绪三个维度，
+                    谷歌股票的综合评分为58.7分（满分100分），评级为"持有"。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="disclaimer-section">
+            <div class="highlight-box">
+                <h2 class="disclaimer-title">免责声明</h2>
+                <p>本页面展示的图表和分析仅供参考，不构成投资建议。投资者应自行承担投资决策的风险和责任。市场有风险，投资需谨慎。</p>
+                <p>数据来源：Yahoo Finance、TipRanks、公司财报、行业报告等。</p>
+                <p>报告日期：2025年03月26日</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                &copy; <span id="currentYear"></span> 浩南赛博谷歌股票量子分析系统 | 免责声明：本网站内容仅供参考，不构成投资建议
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // 设置当前日期
+        function setCurrentDate() {
+            const now = new Date();
+            const dateElement = document.getElementById('currentDate');
+            const yearElement = document.getElementById('currentYear');
+            
+            if (dateElement) {
+                dateElement.textContent = now.toLocaleDateString('zh-CN', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                });
+            }
+            
+            if (yearElement) {
+                yearElement.textContent = now.getFullYear();
+            }
+        }
+        
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            setCurrentDate();
+        });
+    </script>
+</body>
+</html>

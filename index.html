@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浩南赛博谷歌股票量子分析系统</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="dashboard-title">赛博谷歌股票量子分析系统</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">首页</a></li>
+                    <li><a href="report.html" class="nav-link">分析报告</a></li>
+                    <li><a href="recommendations.html" class="nav-link">交易建议</a></li>
+                    <li><a href="charts.html" class="nav-link">图表分析</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <div class="dashboard-title">
+                <h1 class="text-4xl">谷歌（Alphabet Inc.）股票量子分析系统</h1>
+                <p class="subtitle">基于量子算法的技术面、基本面和市场情绪综合分析</p>
+                <div class="button-group">
+                    <a href="report.html" class="btn btn-primary">查看完整分析报告</a>
+                    <a href="recommendations.html" class="btn btn-secondary">交易建议</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="date-display">
+            <span id="currentDate"></span>
+        </div>
+
+        <section class="price-container">
+            <h2 class="price-header">当前分析概览</h2>
+            <div class="price-grid">
+                <div class="price-item">
+                    <div class="price-label">当前价格</div>
+                    <div class="price-value">$170.56</div>
+                    <p class="price-note">截至2025年03月26日</p>
+                </div>
+                <div class="price-item">
+                    <div class="price-label">综合评级</div>
+                    <div class="price-value purple">持有</div>
+                    <p class="price-note">综合评分：58.7分</p>
+                </div>
+                <div class="price-item">
+                    <div class="price-label">目标价格</div>
+                    <div class="price-value">$215.03</div>
+                    <p class="price-note">上涨潜力：26.07%</p>
+                </div>
+            </div>
+            
+            <div class="calculation-info">
+                <p class="info-title">今日交易建议：</p>
+                <p>建议做多位置：$167.50-$168.50，止盈$175.00，止损$165.20</p>
+                <p>建议做空位置：$174.50-$175.50，止盈$168.00，止损$177.80</p>
+            </div>
+        </section>
+
+        <section class="chart-container">
+            <h2 class="price-header">综合评分</h2>
+            <div class="chart-wrapper">
+                <img src="images/overall_score.png" alt="谷歌股票综合评分" class="chart-image">
+            </div>
+        </section>
+
+        <section class="analysis-section">
+            <h2 class="price-header">分析维度</h2>
+            <div class="analysis-grid">
+                <div class="price-item">
+                    <div class="price-label">技术面分析</div>
+                    <div class="price-value negative">38.0分</div>
+                    <p class="price-note">评级：看跌</p>
+                    <div class="link-wrapper">
+                        <a href="report.html#technical" class="detail-link">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-label">基本面分析</div>
+                    <div class="price-value">70.0分</div>
+                    <p class="price-note">评级：强势</p>
+                    <div class="link-wrapper">
+                        <a href="report.html#fundamental" class="detail-link">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-label">市场情绪分析</div>
+                    <div class="price-value">69.5分</div>
+                    <p class="price-note">评级：看好</p>
+                    <div class="link-wrapper">
+                        <a href="report.html#sentiment" class="detail-link">查看详情 →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chart-container">
+            <h2 class="price-header">交易策略</h2>
+            <div class="chart-wrapper">
+                <img src="images/trading_strategy_chart.png" alt="谷歌股票交易策略图" class="chart-image">
+            </div>
+            <div class="strategy-grid">
+                <div class="price-item">
+                    <div class="price-label">短期投资者</div>
+                    <p class="strategy-text">建议操作：持有观望</p>
+                    <p class="price-note">时间周期：1-3个月</p>
+                    <div class="link-wrapper">
+                        <a href="recommendations.html#short-term" class="detail-link">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-label">中期投资者</div>
+                    <p class="strategy-text">建议操作：持有观望</p>
+                    <p class="price-note">时间周期：3-12个月</p>
+                    <div class="link-wrapper">
+                        <a href="recommendations.html#mid-term" class="detail-link">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-label">长期投资者</div>
+                    <p class="strategy-text">建议操作：长期持有并逢低加仓</p>
+                    <p class="price-note">时间周期：1年以上</p>
+                    <div class="link-wrapper">
+                        <a href="recommendations.html#long-term" class="detail-link">查看详情 →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="charts-overview">
+            <h2 class="price-header">主要图表</h2>
+            <div class="charts-grid">
+                <div class="chart-container small">
+                    <h3 class="price-label">价格趋势</h3>
+                    <img src="images/google_1y_price_chart.png" alt="谷歌股票价格趋势" class="chart-image">
+                    <div class="link-wrapper text-right">
+                        <a href="charts.html#price" class="detail-link">查看更多 →</a>
+                    </div>
+                </div>
+                <div class="chart-container small">
+                    <h3 class="price-label">技术分析</h3>
+                    <img src="images/google_technical_analysis.png" alt="谷歌股票技术分析" class="chart-image">
+                    <div class="link-wrapper text-right">
+                        <a href="charts.html#technical" class="detail-link">查看更多 →</a>
+                    </div>
+                </div>
+                <div class="chart-container small">
+                    <h3 class="price-label">收入构成</h3>
+                    <img src="images/revenue_breakdown_pie.png" alt="谷歌收入构成" class="chart-image">
+                    <div class="link-wrapper text-right">
+                        <a href="charts.html#fundamental" class="detail-link">查看更多 →</a>
+                    </div>
+                </div>
+                <div class="chart-container small">
+                    <h3 class="price-label">分析师评级</h3>
+                    <img src="images/analyst_ratings_distribution.png" alt="谷歌分析师评级" class="chart-image">
+                    <div class="link-wrapper text-right">
+                        <a href="charts.html#sentiment" class="detail-link">查看更多 →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="disclaimer-section">
+            <div class="highlight-box">
+                <h2 class="disclaimer-title">免责声明</h2>
+                <p>本报告仅供参考，不构成投资建议。投资者应自行承担投资决策的风险和责任。市场有风险，投资需谨慎。</p>
+                <p>数据来源：Yahoo Finance、TipRanks、公司财报、行业报告等。</p>
+                <p>报告日期：2025年03月26日，联系方式414194762</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                &copy; <span id="currentYear"></span> 浩南赛博谷歌股票量子分析系统 | 免责声明：本网站内容仅供参考，不构成投资建议
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // 设置当前日期
+        function setCurrentDate() {
+            const now = new Date();
+            const dateElement = document.getElementById('currentDate');
+            const yearElement = document.getElementById('currentYear');
+            
+            if (dateElement) {
+                dateElement.textContent = now.toLocaleDateString('zh-CN', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                });
+            }
+            
+            if (yearElement) {
+                yearElement.textContent = now.getFullYear();
+            }
+        }
+        
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            setCurrentDate();
+        });
+    </script>
+</body>
+</html>
